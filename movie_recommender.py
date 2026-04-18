@@ -37,7 +37,7 @@ st.markdown('<div class="subtitle">Discover movies like Netflix 🍿</div>', uns
 
 # ---------------- LOAD ----------------
 movies = pd.read_csv('tmdb_5000_movies.csv')
-credits = pd.read_csv('tmdb_5000_credits.csv')
+credits = pd.read_csv('credits_small.csv')
 
 movies = movies.merge(credits, on='title')
 
